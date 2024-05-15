@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Products.Dto;
 using Products.Interfaces;
 using Products.Model;
 
@@ -18,7 +19,15 @@ public class ProductsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<List<ProductsModel>>> GetAllProducts()
     {
-        var result = _productService.GetAllProducts();
+        var result = await _productService.GetAllProducts();
+
+        return Ok(result);
+    }
+
+    [HttpPost("new-product")]
+    public async Task<ActionResult<object>> CreateNewProduct(ProductsDto products)
+    {
+        object result = await _productService.CreateNewProduct(products);
 
         return Ok(result);
     }
