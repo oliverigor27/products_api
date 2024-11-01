@@ -1,5 +1,9 @@
 # API de Cadastro e Listagem de Produtos
 
+![.NET Core](https://img.shields.io/badge/.NET-8-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+
 Esta é uma API simples desenvolvida em ASP.NET 8, criada para demonstrar o uso do ADO.NET para operações básicas de cadastro e listagem de produtos. A API possui dois end-points principais: `list` e `new-product`.
 
 ## End-points

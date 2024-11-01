@@ -1,0 +1,3 @@
+# Ignora as pastas bin e obj em todos os subdiretórios
+**/bin/
+**/obj/
